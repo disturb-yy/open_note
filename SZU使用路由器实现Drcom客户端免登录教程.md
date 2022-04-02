@@ -6,7 +6,7 @@
 
 ##### 2 dogcom
 
-​	下载地址在[[2018-10-11\]【DrCOM/dr.com校园网路由器】恩山无线论坛)](https://www.right.com.cn/forum/thread-215978-1-1.html)里面的5楼，我下载的是第二个，下载完把文件名改为dogcom备用
+​	下载地址在[[2018-10-11\]【DrCOM/dr.com校园网路由器】恩山无线论坛)](https://www.right.com.cn/forum/thread-215978-1-1.html)里面的5楼，我下载的是第二个，下载完把解压出来的文件名改为dogcom备用
 
 ![image-20210922162640965](image/SZU%E4%BD%BF%E7%94%A8%E8%B7%AF%E7%94%B1%E5%99%A8%E5%AE%9E%E7%8E%B0Drcom%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%85%8D%E7%99%BB%E5%BD%95%E6%95%99%E7%A8%8B.assets/image-20210922162640965.png)
 
@@ -26,7 +26,7 @@
 
 <img src="image/SZU%E4%BD%BF%E7%94%A8%E8%B7%AF%E7%94%B1%E5%99%A8%E5%AE%9E%E7%8E%B0Drcom%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%85%8D%E7%99%BB%E5%BD%95%E6%95%99%E7%A8%8B.assets/image-20210922163312276.png" alt="image-20210922163312276" style="zoom: 80%;" />
 
-4）打开Wireshark，并选择“以太网，然后点击左上角的“开始”，接点登录Drcom客户端，等待30s左右（如果抓包失败可以延长一下抓包时间）后，点击Wireshark左上角的红色按钮，并点击“文件-另存为dr.pcapng”
+4）打开Wireshark，并选择“以太网，然后点击左上角的“开始”，接着登录Drcom客户端，等待30s左右（如果抓包失败可以延长一下抓包时间）后，点击Wireshark左上角的红色按钮，并点击“文件-另存为dr.pcapng”
 
 5）打开在线配置生成器https://drcoms.github.io/drcom-generic/，选择对应版本，然后点击open选择刚才生成的dr.pcapng文件，点击右边的SAVE将生成的配置文件保存为drcom.conf
 
@@ -65,7 +65,7 @@ ror_version = True  —— 修改为True
 4）使用putty登录路由器，输入下列指令，测试网络是否连通
 
 ```
-/usr/dogcom -m dhcp -c /usr/drcom.conf -v
+    /usr/dogcom -m dhcp -c /usr/drcom.conf -v
 ```
 
 5）确定可正常上网后，添加开机启动项
